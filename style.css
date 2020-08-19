@@ -1,0 +1,166 @@
+/*
+
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|PT+Sans|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+html {
+    background-color: black;
+}
+
+div#topbar {
+    background-color: #ffd54f;
+    width: 100%;
+    margin: 0px auto 8px auto;
+    border-radius: 0;
+
+    display: flex;
+    flex-flow: row;
+}
+
+div#fab {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #ffd54f;
+    padding: 4px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-duration: 200ms;
+}
+
+div#fab:active {
+    bottom: 12px;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 16px;
+    padding-right: 0px;
+    margin: 0px;
+}
+
+#noteWriter {
+    display: none;
+    flex-flow: column;
+
+    margin: 8px auto 16px auto;
+
+    min-width: 480px;
+    max-width: 480px;
+    
+    background-color: #212121;
+}
+
+
+#notes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+div {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.315) 0 2px 2px;
+}
+
+.note {
+    display: flex;
+    flex-flow: column;
+
+    flex-grow: 0;
+    flex-shrink: 4;
+    flex-basis: 480px;
+
+    background-color: #212121;
+    /*min-width: 480px;
+    max-width: 480px;*/
+    margin: 8px;
+
+    transition-duration: 200ms;
+}
+
+.note *, #noteWriter * {
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 16px;
+}
+
+#noteWriter * {
+    background-color: #212121;
+    transition-duration: 200ms;
+    border-radius: 5px;
+}
+
+#noteWriter input, .note h2 {
+    font-size: 24px;
+    margin: 8px;
+    border: none;
+}
+
+#noteWriter textarea, .note p {
+    margin: 8px;
+    font-size: 16px;
+    border: none;
+    resize: none;
+}
+
+#noteWriter #button {
+    border: none;
+    background-color: #484848;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.315) 0 2px 2px;
+    text-align: center;
+}
+
+#noteWriter #button:hover {
+    color: white;
+}
+
+#noteWriter #button:active {
+    box-shadow: rgba(0, 0, 0, 0) 0 2px 2px;
+    border: none;
+}
+
+
+#noteWriter input:hover, #noteWriter textarea:hover, .note:hover {
+    background-color: #484848;
+}
+
+body {
+    margin: 0px auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: none; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px; 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.30); 
+}

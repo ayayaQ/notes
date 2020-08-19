@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="notes.js" defer></script>
+</head>
+<body>
+    <div id="topbar"><h1>Notes</h1><img src="icons/create-black-48dp.svg" alt=""></div>
+    <div id="notes"></div>
+    <div id="noteWriter">
+        <input type="text" id="title" placeholder="Title">
+        <textarea id="noteContent" cols="30" rows="10" placeholder="Hello..."></textarea>
+        <div id="button" onclick="saveNote()">Save</div>
+    </div>
+    <div id="fab" onclick="showWriter()"><img src="icons/add-black-48dp.svg" alt=""></div>
+</body>
+</html>
