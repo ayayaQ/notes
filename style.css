@@ -73,7 +73,7 @@ div {
     box-shadow: rgba(0, 0, 0, 0.315) 0 2px 2px;
 }
 
-.note {
+.note, .edit {
     display: flex;
     flex-flow: column;
 
@@ -89,33 +89,33 @@ div {
     transition-duration: 200ms;
 }
 
-.note *, #noteWriter * {
+.note *, #noteWriter *, .edit * {
     color: white;
 
     font-family: 'Roboto', sans-serif;
     padding: 8px 16px;
 }
 
-#noteWriter * {
+#noteWriter *, .edit input, .edit textarea {
     background-color: #212121;
     transition-duration: 200ms;
     border-radius: 5px;
 }
 
-#noteWriter input, .note h2 {
+#noteWriter input, .note h2, .edit input {
     font-size: 24px;
     margin: 8px;
     border: none;
 }
 
-#noteWriter textarea, .note p {
+#noteWriter textarea, .note p, .edit textarea {
     margin: 8px;
     font-size: 16px;
     border: none;
     resize: none;
 }
 
-#noteWriter #button {
+#noteWriter #button, .button {
     border: none;
     background-color: #484848;
     color: rgba(255, 255, 255, 0.6);
@@ -126,17 +126,17 @@ div {
     text-align: center;
 }
 
-#noteWriter #button:hover {
+#noteWriter #button:hover, .button:hover {
     color: white;
 }
 
-#noteWriter #button:active {
+#noteWriter #button:active, .button:active {
     box-shadow: rgba(0, 0, 0, 0) 0 2px 2px;
     border: none;
 }
 
 
-#noteWriter input:hover, #noteWriter textarea:hover, .note:hover {
+#noteWriter input:hover, #noteWriter textarea:hover, .note:hover, .edit input:hover, .edit textarea:hover {
     background-color: #484848;
 }
 
