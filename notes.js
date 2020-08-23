@@ -62,7 +62,7 @@ function saveNote() {
     
     
     clearFields();
-    console.log(notes);
+    showWriter();
 }
 
 

@@ -54,7 +54,7 @@ h1 {
 
     margin: 8px auto 16px auto;
 
-    min-width: 480px;
+    
     max-width: 480px;
     
     background-color: #212121;
@@ -94,6 +94,10 @@ div {
 
     font-family: 'Roboto', sans-serif;
     padding: 8px 16px;
+}
+
+.edit {
+    max-width: 100%;
 }
 
 #noteWriter *, .edit input, .edit textarea {
